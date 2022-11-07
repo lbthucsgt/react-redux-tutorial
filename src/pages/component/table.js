@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDispatch, useSelector} from "react-redux";
-import {REMOVED_TODO} from "../actions/type";
+import {REMOVED_TODO} from "../../actions/type";
 import { memo } from "react";
 
 const Table = (props) => {

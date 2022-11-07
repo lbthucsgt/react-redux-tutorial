@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Table from "./table";
+import Table from "./component/table";
 import {YES_OR_NO} from '../actions/type';
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
@@ -21,13 +21,14 @@ const Yesno = (props) => {
                     <li><Link to='/counter'>Counter</Link></li>
                     <li><Link to='/todo'>Todo</Link></li>
                     <li><Link to='/yesno'>Yes Or No</Link></li>
+                    <li><Link to='/test-callback'>Test Callback Hook</Link></li>
                 </ul>
             </div>
     
             <Table/>
     
             <div style={{display: "flex", alignItems: "center"}}>
-                <button onClick={handleClick} style={{'margin-right': '20px'}}>Pick</button>
+                <button onClick={handleClick} style={{marginRight: '20px'}}>Pick</button>
                 <div>answer: {answer}</div>
             </div>
         </div>

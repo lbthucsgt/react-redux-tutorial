@@ -3,7 +3,7 @@ import store from "../store";
 import {COUNTER_INCREMENT, COUNTER_DECREMENT} from "../actions/type";
 import {useDispatch, useSelector} from 'react-redux'
 import {Link} from "react-router-dom";
-import Table from "./table";
+import Table from "./component/table";
 
 
 const Test = (props) => {
@@ -19,6 +19,7 @@ const Test = (props) => {
                     <li><Link to='/counter'>Counter</Link></li>
                     <li><Link to='/todo'>Todo</Link></li>
                     <li><Link to='/yesno'>Yes Or No</Link></li>
+                    <li><Link to='/test-callback'>Test Callback Hook</Link></li>
                 </ul>
             </div>
             <Table/>

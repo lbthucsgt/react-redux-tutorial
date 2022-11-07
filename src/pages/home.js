@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import {Link} from "react-router-dom";
-import Table from "./table";
+import Table from "./component/table";
 
 const Home = (props) => {
     const [count, setCount] = useState(0);
@@ -13,6 +13,7 @@ const Home = (props) => {
                     <li><Link to='/counter'>Counter</Link></li>
                     <li><Link to='/todo'>Todo</Link></li>
                     <li><Link to='/yesno'>Yes Or No</Link></li>
+                    <li><Link to='/test-callback'>Test Callback Hook</Link></li>
                 </ul>
             </div>
             <Table/>
