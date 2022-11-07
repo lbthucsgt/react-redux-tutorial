@@ -12,13 +12,13 @@ const TestCallback = () => {
     };
     
     // original
-    const addTodo = () => {
+    /*const addTodo = () => {
         setTodos((t) => [...t, "New Todo"]);
-    };
+    };*/
     
-    /*const addTodo = useCallback(() => {            // giúp chặn render ko cần thiết của component Todos
+    const addTodo = useCallback(() => {            // giúp chặn render ko cần thiết của component Todos
         setTodos((t) => [...t, "New Todo"]);
-    }, [todos]);*/
+    }, [todos]);
     
     
     return (
