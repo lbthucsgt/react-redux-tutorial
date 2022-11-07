@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
-import { useReducer } from "react";
 import Table from "./component/table";
-import { ADDED_TODO, REMOVED_TODO } from '../actions/type';
+import { ADDED_TODO } from '../actions/type';
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 
-const Todo = (props) => {
+const Information = (props) => {
     const [name, setName] = useState("")
     const [job, setJob] = useState("")
     const dispatch = useDispatch();
@@ -24,7 +23,7 @@ const Todo = (props) => {
                 <ul>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/counter'>Counter</Link></li>
-                    <li><Link to='/todo'>Todo</Link></li>
+                    <li><Link to='/information'>Information</Link></li>
                     <li><Link to='/yesno'>Yes Or No</Link></li>
                     <li><Link to='/test-callback'>Test Callback Hook</Link></li>
                 </ul>
@@ -44,5 +43,5 @@ const Todo = (props) => {
     )
 };
 
-export default Todo
+export default Information
     
