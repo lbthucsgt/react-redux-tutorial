@@ -26,8 +26,10 @@ const Yesno = (props) => {
     
             <Table/>
     
-            <button onClick={handleClick}>Pick</button>
-            <div>answer: {answer}</div>
+            <div style={{display: "flex", alignItems: "center"}}>
+                <button onClick={handleClick} style={{'margin-right': '20px'}}>Pick</button>
+                <div>answer: {answer}</div>
+            </div>
         </div>
     )
 };
