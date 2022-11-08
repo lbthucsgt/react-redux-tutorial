@@ -16,10 +16,10 @@ const Test = (props) => {
             <div className='scroll-up-dashboard'>
                 <ul>
                     <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/test-callback'>Test Callback Hook</Link></li>
                     <li><Link to='/counter'>Counter</Link></li>
                     <li><Link to='/information'>Information</Link></li>
                     <li><Link to='/yesno'>Yes Or No</Link></li>
-                    <li><Link to='/test-callback'>Test Callback Hook</Link></li>
                 </ul>
             </div>
             <Table/>
